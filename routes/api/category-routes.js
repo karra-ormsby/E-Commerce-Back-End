@@ -3,7 +3,7 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
-//Find all categories
+//Get all categories
 router.get('/', async (req, res) => {
   try {
     const categoryData = await Category.findAll({
@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-//Find one category by its id value
+//Get one category by its id value
 router.get('/:id', async (req, res) => {
   try {
     const categoryData = await Category.findByPk(req.params.id, {
