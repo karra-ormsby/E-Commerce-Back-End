@@ -33,7 +33,7 @@ Tag.belongsToMany(Product, {
     unique: false
   },
   // Define an alias for when data is retrieved
-  as: 'taged_products'
+  as: 'tagged_products'
 });
 
 module.exports = {
